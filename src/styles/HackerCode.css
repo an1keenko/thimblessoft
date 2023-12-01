@@ -12,6 +12,7 @@
 .hacker-code {
     font-family: 'Fira Code', monospace;
     overflow: hidden;
+    white-space: pre-wrap;
     margin: 0;
     animation: typing 3.5s steps(30, end);
     font-size: 16px;
