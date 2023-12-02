@@ -83,6 +83,12 @@ export const HackerCode = () => {
                     clearTimeout(timerRef.current);
                 }
                 timerRef.current = setTimeout(typeChar, 100);
+            } else {
+                currentChar = 0;
+                if (timerRef.current) {
+                    clearTimeout(timerRef.current);
+                }
+                timerRef.current = setTimeout(typeChar, 100);
             }
         };
         typeChar();
@@ -92,7 +98,6 @@ export const HackerCode = () => {
             }
         };
     }, []);
-
     return (
         <pre className="hacker-code">{text}</pre>
     );
